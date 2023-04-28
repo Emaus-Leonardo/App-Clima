@@ -63,4 +63,12 @@ searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
 });
 
-// Adiciona um ouvinte de eventos à caixa de pesquisa para permitir que o usuário pressione a tecla Enter para chamar a função checkWeather() com base no
+// Adiciona um ouvinte de evento ao input da barra de pesquisa, que chama a função checkWeather quando a tecla Enter é pressionada
+searchBox.addEventListener('keydown', function (event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      const searchValue = searchBox.value;
+      checkWeather(searchValue);
+    }
+  });
+
