@@ -37,6 +37,10 @@ body {
     background: transparent;
 }
 
+.search input:focus {
+    width: 100%;
+}
+
 .search:hover input {
     display: block;
 }
@@ -44,7 +48,6 @@ body {
 .search a .fas{
     color: #1daf;
     font-size: 18px;
-
 }
 
 .card {
